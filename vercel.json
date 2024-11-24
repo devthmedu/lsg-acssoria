@@ -4,18 +4,25 @@
     {
       "src": "src/script/aos.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/src/script/aos.js"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
     }
   ],
   "env": {
     "NODE_ENV": "production"
   },
   "buildCommand": "npm run build:production",
-  "outputDirectory": "dist",
-  "public": "/public"
+  "outputDirectory": "dist"
 }
