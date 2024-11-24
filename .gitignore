@@ -1,1 +1,3 @@
 node_modules
+# Ignore vídeos grandes e outros arquivos gerados
+public/video/*
