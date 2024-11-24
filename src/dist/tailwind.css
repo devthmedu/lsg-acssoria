@@ -1,0 +1,33 @@
+/* tailwind.css - Gerado automaticamente pelo Tailwind */
+
+/* Bloques de Tailwind CSS (gerados automaticamente) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #FFFFFF;
+    color: #131415;
+  }
+
+  .dark {
+    background-color: #131313;
+    color: #FFFFFF;
+  }
+
+  a {
+    color: #ff781e;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+      background-color: #FFFFFF;
+  }
+
+  h1, h2, h3 {
+    color: #070707;
+  }
+}
+
+/* Outros estilos do Tailwind e utilitários serão aqui gerados... */
