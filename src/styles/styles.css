@@ -31,6 +31,18 @@
   }
 }
 
+        .video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -99;
+        animation: zoomIn 20s infinite alternate;
+        opacity:0.9; /* Opacidade do vídeo */
+        filter: blur(2px); /* Filtro de desfoque (blur) */
+      }
 /* Estilo do botão para o WhatsApp */
 .whatsapp-btn {
   display: inline-block;
