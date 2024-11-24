@@ -7,18 +7,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Cores Primárias
         primary: '#000000',  // Preto
         secondary: '#ffffff',  // Branco
+
+        // Cores de fundo
+        'light-background': '#ffffff',  // Cor de fundo claro
+        'dark-background': '#0B0B0BFF',  // Fundo escuro mais suave
+
+        // Cores de texto
+        'light-text': '#000000',  // Texto escuro para modo claro
+        'dark-text': '#ffffff', // Texto claro para o modo escuro
+
+        // Cores de destaque
         accent: '#131313',  // Escuro
         'accent-dark': '#212121',  // Cinza mais claro
         highlight: '#ff781e',  // Cor de destaque laranja
-
         dark: '#070707FF',  // Cor de fundo escuro
-        'dark-background': '#0B0B0BFF',  // Fundo escuro mais suave
-        'dark-text': '#ffffff', // Texto claro para o modo escuro
 
-        'light-background': '#ffffff',  // Cor de fundo claro
-        'light-text': '#000000',  // Texto escuro para modo claro
+        // Outras cores
+        'link-color': '#ff781e', // Cor do link padrão
+        'hover-link-color': '#e64a19', // Cor do link ao passar o mouse
       },
 
       typography: {

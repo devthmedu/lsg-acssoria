@@ -1,12 +1,13 @@
 /* src/styles.css */
 
-@import 'animate.css'; /* Importa o pacote animate.css */
+/* Importa o pacote animate.css */
+@import 'animate.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/* Definições base */
 @layer base {
   html {
     background-color: #FAFAFA; /* Cor de fundo para modo claro */
@@ -18,31 +19,22 @@
     color: #FAFAFA; /* Cor do texto para modo escuro */
   }
 
+  /* Estilo para links */
   a {
     color: #fa6400; /* Cor do link no modo claro */
   }
 
+  /* Estilos globais para a fonte */
   body {
     font-family: 'Roboto', sans-serif;
   }
 
+  /* Estilos para títulos */
   h1, h2, h3 {
     color: #070707; /* Cor dos títulos */
   }
 }
 
-        .video-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -99;
-        animation: zoomIn 20s infinite alternate;
-        opacity:0.9; /* Opacidade do vídeo */
-        filter: blur(2px); /* Filtro de desfoque (blur) */
-      }
 /* Estilo do botão para o WhatsApp */
 .whatsapp-btn {
   display: inline-block;
@@ -60,23 +52,26 @@
   margin-top: 1rem;
 }
 
+/* Efeito de hover para o botão WhatsApp */
 .whatsapp-btn:hover {
   background-color: transparent; /* Torna o fundo transparente ao passar o mouse */
   color: #25d366; /* Cor do texto ao passar o mouse (verde do WhatsApp) */
   border-color: #25d366; /* Mantém a cor da borda verde do WhatsApp no hover */
 }
 
+/* Efeito de focus no botão WhatsApp */
 .whatsapp-btn:focus {
   outline: none; /* Remove o contorno padrão de foco */
   box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.4); /* Sombra suave de foco verde */
 }
 
+/* Efeito de active no botão WhatsApp */
 .whatsapp-btn:active {
   background-color: #128c7e; /* Cor de fundo mais escura (verde do WhatsApp escuro) quando clicado */
   border-color: #128c7e; /* Borda mais escura ao clicar */
 }
 
-/* Estilo do botão para o link */
+/* Estilo do botão "Saiba Mais" */
 .whatsapp-saiba-mais {
   display: inline-block;
   padding: 12px 24px;
@@ -93,24 +88,26 @@
   margin-top: 1rem;
 }
 
+/* Efeito de hover no botão Saiba Mais */
 .whatsapp-saiba-mais:hover {
   background-color: transparent; /* Torna o fundo transparente ao passar o mouse */
   color: #25d366; /* Cor do texto ao passar o mouse (verde do WhatsApp) */
   border-color: #25d366; /* Mantém a cor da borda verde do WhatsApp no hover */
 }
 
+/* Efeito de focus no botão Saiba Mais */
 .whatsapp-saiba-mais:focus {
   outline: none; /* Remove o contorno padrão de foco */
   box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.4); /* Sombra suave de foco verde */
 }
 
+/* Efeito de active no botão Saiba Mais */
 .whatsapp-saiba-mais:active {
   background-color: #128c7e; /* Cor de fundo mais escura (verde do WhatsApp escuro) quando clicado */
   border-color: #128c7e; /* Borda mais escura ao clicar */
 }
 
-
-/* Estilo para as imagens */
+/* Estilo para as imagens de marca */
 .brand-img {
   transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para o efeito de hover */
   cursor: pointer; /* Indica que as imagens são clicáveis */
@@ -119,28 +116,25 @@
   object-fit: cover; /* Garante que as imagens cubram o espaço sem distorcer */
 }
 
-/* Efeito de hover: diminui o tamanho da imagem */
-.brand-img:hover {
-  transform: scale(0.9); /* Diminui o tamanho da imagem */
-  filter: brightness(0.8); /* Escurece a imagem ao passar o mouse */
-}
-
-
-/* Efeito ao passar o mouse */
+/* Efeito de hover nas imagens de marca */
 .brand-img:hover {
   transform: scale(1.1); /* Aumenta a imagem quando o mouse passa sobre ela */
   filter: grayscale(0%) brightness(1); /* Remove o filtro preto e branco e restaura o brilho normal */
 }
+
+/* Estilos para o fundo do botão */
 .bg-indigo-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(247 73 0);
 }
 
+/* Estilos para o texto do link */
 .text-blue-600 {
     --tw-text-opacity: 1;
     color: rgb(238 66 7);
 }
 
+/* Estilo da navegação */
 .nav a {
   position: relative; /* Necessário para a linha abaixo */
   padding-bottom: 4px; /* Espaço para a linha */
@@ -169,7 +163,7 @@
   width: 100%; /* A linha fica totalmente visível para o link ativo */
 }
 
-
+/* Estilo do modal de cookies */
 #cookies-with-stacked-buttons {
   position: fixed; /* Fixa o modal na tela */
   bottom: 0;
@@ -184,6 +178,7 @@
   animation: slide-up 0.5s ease-out; /* Animação para subir o modal */
 }
 
+/* Animação de deslizar para cima */
 @keyframes slide-up {
   from {
     transform: translateY(100%); /* Começa fora da tela */
@@ -197,31 +192,28 @@
   display: block; /* Exibe o modal quando necessário */
 }
 
-.fixed {
-  position: fixed;
-}
-
+/* Esconde o elemento */
 .hidden {
   display: none;
 }
 
-
-
+/* Efeitos de transição para links no rodapé */
 footer a {
   transition: color 0.3s ease;
 }
 
-/* Links das categorias e menus */
+/* Links de categorias e menus */
 footer a.text-gray-400 {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
+/* Efeito de hover no rodapé */
 footer a.text-gray-400:hover {
-  color: #fa6400; /* Cor de destaque (azul indigo) */
+  color: #fa6400; /* Cor de destaque (laranja do site) */
 }
 
-/* Ícones das redes sociais */
+/* Estilos para os ícones das redes sociais */
 footer .flex a svg {
   width: 1.25rem;
   height: 1.25rem;
@@ -229,13 +221,10 @@ footer .flex a svg {
 }
 
 footer .flex a:hover svg {
-  fill: #fa6400;
+  fill: #fa6400; /* Cor de destaque (laranja do site) */
 }
 
-/* Diminui a altura do vídeo */
-
-
-  /* From Uiverse.io by mobinkakei */ 
+/* Estilo para a chamada à ação (CTA) */
 .cta {
   display: flex;
   padding: 11px 33px;
@@ -251,10 +240,12 @@ footer .flex a:hover svg {
   margin-top: 1rem;
 }
 
+/* Efeito de foco na CTA */
 .cta:focus {
   outline: none;
 }
 
+/* Efeito de hover na CTA */
 .cta:hover {
   transition: 0.5s;
   box-shadow: 10px 10px 0 #fa6400;
@@ -270,27 +261,7 @@ footer .flex a:hover svg {
   margin-right: 45px;
 }
 
-.span {
-  transform: skewX(15deg);
-}
-
-.second {
-  width: 20px;
-  margin-left: 30px;
-  position: relative;
-  top: 12%;
-}
-
-.one {
-  transition: 0.4s;
-  transform: translateX(-60%);
-}
-
-.two {
-  transition: 0.5s;
-  transform: translateX(-30%);
-}
-
+/* Efeito de animação de cor no hover */
 .cta:hover .three {
   animation: color_anim 1s infinite 0.2s;
 }
@@ -305,6 +276,7 @@ footer .flex a:hover svg {
   animation: color_anim 1s infinite 0.4s;
 }
 
+/* Animação de cor */
 @keyframes color_anim {
   0% {
     fill: white;

@@ -17,7 +17,5 @@
   },
   "buildCommand": "npm run build:production",
   "outputDirectory": "dist",
-  "static": {
-    "public": "/public"
-  }
+  "public": "/public"
 }
