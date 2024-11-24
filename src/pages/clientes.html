@@ -163,52 +163,90 @@
     fill: white;
   }
 }
-
-  
 </style>
-
-
 </head>
 
-<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
 
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
 <!-- ========== HEADER ========== -->
 <header class="text-gray-400 bg-black body-font">
+
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="../templates/creative-agency/index.html" aria-label="Preline">
+    <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="../../public/index.html" aria-label="Preline">
         <img src="../img/logo-clara.png" alt="Logo" class="dark:hidden w-24"> <!-- Logo para modo claro -->
         <img src="../img/logo-clara.png" alt="Logo" class="hidden dark:block w-24"> <!-- Logo para modo escuro -->
     </a>
 
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-white" href="../pages/home.html">Sobre Nós</a>
+      <a class="mr-5 hover:text-white" href="#clientes">Clientes e Depoimentos</a>
       <a class="mr-5 hover:text-white" href="#">Serviços</a>
       <a class="mr-5 hover:text-white" href="#">Contato</a>
     </nav>
+
+   
+        <button 
+         class="cta flex items-center justify-center px-6 py-6 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700 transition duration-300"
+         onclick="window.location.href='https://api.whatsapp.com/send/?phone=5519981331191&text&type=phone_number&app_absent=0'">
+        <span class="span text-sm mr-2"> Conversar AGORA</span>
+        <span class="second">
+          <svg
+            width="30px"
+            height="20px"
+            viewBox="0 0 66 43"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path
+                class="one"
+                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                fill="#FFFFFF"
+              ></path>
+              <path
+                class="two"
+                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                fill="#FFFFFF"
+              ></path>
+              <path
+                class="three"
+                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                fill="#FFFFFF"
+              ></path>
+            </g>
+          </svg>
+        </span>
+      </button>
   </div>
 </header>
 <!-- ========== FIM HEADER ========== -->
 
 <section>
-  <!-- Hero -->
-<div class="bg-gradient-to-b from-violet-600/10 via-transparent">
-  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
-   <div class="relative">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#FFFFFFFF"><path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path></svg>
-  </div>
-    <div class="max-w-3xl text-center mx-auto">
-      <h1 class="block font-medium text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-        Histórias de Sucesso com a LSG Digital
-      </h1>
-       <p class="mt-4 text-black-100 black:text-neutral-200">
-           O sucesso dos nossos clientes é o que nos motiva. Não acreditamos apenas em números, mas em histórias reais de empresas que transformaram suas operações e alcançaram resultados extraordinários.
-        </p>
+  <div class="bg-gradient-to-b from-violet-600/10 via-transparent relative mb-1">
+    <div class="absolute inset-0 -z-10">
+      <!-- SVG de Fundo -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#0000006A">
+        <path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".2"></path>
+        <path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".3"></path>
+        <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z" opacity=".4"></path>
+      </svg>
+    </div>
+
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
+      <div class="relative">
+        <div class="max-w-3xl text-center mx-auto">
+          <h1 class="mt-4 block font-medium text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+            Histórias de Sucesso com a LSG Digital
+          </h1>
+          <p class="mt-4 text-black-100 black:text-neutral-200">
+            O sucesso dos nossos clientes é o que nos motiva. Não acreditamos apenas em números, mas em histórias reais de empresas que transformaram suas operações e alcançaram resultados extraordinários.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
- 
-</div>
-
 </section>
+
 
 
 <section>
@@ -217,7 +255,7 @@
     <!-- Grid -->
     <div class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
       <!-- Coluna de Texto -->
-      <div class="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
+     <div id="clientes" class="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
         <h2 class="text-2xl sm:text-3xl text-gray-800 font-bold dark:text-neutral-200">
           Resultados Reais, Clientes Satisfeitos
         </h2>
@@ -237,7 +275,7 @@
         <span class="block mt-1 text-gray-600">Ajudamos nossos clientes a melhorar suas vendas através de estratégias eficazes de marketing digital.</span>
         
       </span>
-
+    </<div>
   </button>
 
   <!-- Aba 2: Satisfação e Reconhecimento -->
@@ -271,39 +309,33 @@
           <div>
             <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
               <video class="shadow-xl shadow-gray-200 rounded-xl w-full" controls>
-                <source src="../img/videos/depoimento1.mov" type="video/mp4">
+                <source src="../assets/videos/depoimento1.mov" type="video/mp4">
                 Seu navegador não suporta o vídeo.
               </video>
             </div>
 
             <div id="tabs-with-card-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
               <video class="shadow-xl shadow-gray-200 rounded-xl w-full" controls>
-                <source src="../img/videos/depoimento2.mov" type="video/mp4">
+                <source src="../assets/videos/depoimento2.mov" type="video/mp4">
                 Seu navegador não suporta o vídeo.
               </video>
             </div>
 
             <div id="tabs-with-card-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-3">
               <video class="shadow-xl shadow-gray-200 rounded-xl w-full" controls>
-                <source src="../img/videos/depoimento3.mp4" type="video/mp4">
+                <source src="../assets/videos/depoimento3.mp4" type="video/mp4">
                 Seu navegador não suporta o vídeo.
               </video>
             </div>
           </div>
-          <!-- End Tab Content -->
         </div>
       </div>
     </div>
-    <!-- End Grid -->
-
-    <!-- Background Color -->
     <div class="absolute inset-0 grid grid-cols-12 size-full">
       <div class="col-span-full lg:col-span-8 lg:col-start-6 bg-gray-100 w-full h-5/4 sm:h-3/4 lg:h-full"></div>
     </div>
-    <!-- End Background Color -->
   </div>
 </div>
-<!-- End Depoimentos -->
 </section>
 
 
@@ -382,6 +414,178 @@
 </section>
 
 
+
+<!-- ========== CLIENTES  ========== -->
+<section class="bg-black">
+  <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
+      <div class="max-w-xl text-center sm:text-left">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          Nossos Clientes!
+        </h2>
+
+        <p class="mt-4 text-white">
+          Conheça nossos maiores clientes! Veja como eles têm aproveitado nossos serviços.
+        </p>
+
+        <div class="hidden lg:mt-8 lg:flex lg:gap-4">
+          <!-- Botões de navegação -->
+          <button
+            aria-label="Previous slide"
+            id="keen-slider-previous"
+            class="rounded-full  p-3 text-orange-500 transition hover:bg-orange-500 hover:text-white"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f96400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-left"><circle cx="12" cy="12" r="10"/><path d="m14 16-4-4 4-4"/></svg>
+          </button>
+
+          <button
+            aria-label="Next slide"
+            id="keen-slider-next"
+            class="rounded-full p-3 text-orange-500 transition hover:bg-orange-500 hover:text-white"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f96400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="-mx-6 lg:col-span-2 lg:mx-0">
+        <div id="keen-slider" class="keen-slider">
+          <!-- Slide 1 -->
+          <div class="keen-slider__slide">
+            <div class="flex flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div class="flex items-center space-x-4">
+                <img class="w-12 h-12 rounded-full object-cover" src="../img/Instagram-clientes/amovacinasoficial.jpg" alt="Client 1" />
+                <div class="text-sm">
+                  <p class="font-bold text-black">Amo Vacinas</p>
+                  <p class="text-black">@amovacinasoficial</p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-black">
+                "A experiência foi excelente, nossa empresa cresceu muito desde que começamos a trabalhar com eles!"
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="keen-slider__slide">
+            <div class="flex flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div class="flex items-center space-x-4">
+                <img class="w-12 h-12 rounded-full object-cover" src="../img/Instagram-clientes/tominnicelli.jpg" alt="Client 2" />
+                <div class="text-sm">
+                  <p class="font-bold text-black">Tom Minnicelli</p>
+                  <p class="text-black">@tominnicelli</p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-black">
+                "Simplesmente incrível! Nos ajudaram a aumentar nosso alcance digital em menos de 6 meses."
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="keen-slider__slide">
+            <div class="flex flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div class="flex items-center space-x-4">
+                <img class="w-12 h-12 rounded-full object-cover" src="../img/Instagram-clientes/novo_olhar_revelesuabeleza.jpg" alt="Client 3" />
+                <div class="text-sm">
+                  <p class="font-bold text-black">Kely Santana</p>
+                  <p class="text-black">@novo_olhar_revelesuabeleza</p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-black">
+                "Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos."
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="keen-slider__slide">
+            <div class="flex flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div class="flex items-center space-x-4">
+                <img class="w-12 h-12 rounded-full object-cover" src="../img/Instagram-clientes/casavrsalao.jpg" alt="Client 4" />
+                <div class="text-sm">
+                  <p class="font-bold text-black">CASA VR</p>
+                  <p class="text-black">@casavrsalao</p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-black">
+                "Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos."
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="keen-slider__slide">
+            <div class="flex flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div class="flex items-center space-x-4">
+                <img class="w-12 h-12 rounded-full object-cover" src="../img/Instagram-clientes/novo_olhar_revelesuabeleza.jpg" alt="Client 5" />
+                <div class="text-sm">
+                  <p class="font-bold text-black">Kely Santana</p>
+                  <p class="text-black">@novo_olhar_revelesuabeleza</p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-black">
+                "Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:hidden mt-1 flex justify-center gap-4">
+          <!-- Botões de navegação no mobile -->
+          <button
+            aria-label="Previous slide"
+            id="keen-slider-previous-mobile"
+            class="rounded-full  p-3 text-orange-500 transition hover:bg-orange-500 hover:text-white"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f96400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-left"><circle cx="12" cy="12" r="10"/><path d="m14 16-4-4 4-4"/></svg>
+          </button>
+
+          <button
+            aria-label="Next slide"
+            id="keen-slider-next-mobile"
+            class="rounded-full p-3 text-orange-500 transition hover:bg-orange-500 hover:text-white"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f96400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========== FIM ========== -->
+
+<section>
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+      <div>
+        <div class="max-w-lg md:max-w-none">
+          <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
+          Transforme sua presença digital
+          </h2>
+
+          <p class="mt-4 text-gray-700">
+           A solução que você precisa está a apenas um clique de distância!
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="../img/whats/notbook.png"
+          class="rounded"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
  <section class="text-gray-600 body-font bg-black">
    <div class="relative">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#FFFFFFFF"><path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path></svg>
@@ -426,6 +630,8 @@
   </div>
 </section>
 
+
+
 <footer class="bg-black text-white body-font">
   <div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -465,7 +671,7 @@
         </nav>
       </div>
 
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
         <h2 class="text-lg font-medium text-white tracking-widest mb-3">SIGA-NOS</h2>
         <div class="flex justify-center md:justify-start space-x-4">
           <a href="https://www.facebook.com/lsgdigital" class="text-gray-400 hover:text-indigo-500">
@@ -494,20 +700,6 @@
       </div>
     </div>
   </div>
-
-  <div class="bg">
-    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-between items-center">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 LSG Digital — Todos os Direitos Reservados</p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a href="/politica-de-privacidade" class="text-gray-400 hover:text-indigo-500 mx-2">
-          Política de Privacidade
-        </a>
-        <a href="/termos-e-condicoes" class="text-gray-400 hover:text-indigo-500 mx-2">
-          Termos e Condições
-        </a>
-      </span>
-    </div>
-  </div>
 </footer>
 
 <script>
@@ -528,7 +720,28 @@ tabButtons.forEach(button => {
   });
 });
 </script>
+<!-- Script Imports -->
+<script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.js"></script>
+<script src="../script/banner.js"></script>
+<script src="../script/script.js"></script>
+<script src="../script/theme-toggle.js"></script>
 
-<script src="../scripts/script.js"></script>
+<!-- Keen Slider Configuration -->
+<script type="module">
+  const keenSlider = new KeenSlider("#keen-slider", {
+    loop: true,
+    slides: { origin: 'center', perView: 1.25, spacing: 16 },
+    breakpoints: {
+      '(min-width: 1024px)': {
+        slides: { origin: 'auto', perView: 1.5, spacing: 32 },
+      },
+    },
+  });
+
+  document.getElementById('keen-slider-previous').addEventListener('click', () => keenSlider.prev());
+  document.getElementById('keen-slider-next').addEventListener('click', () => keenSlider.next());
+
+  setInterval(() => { keenSlider.next(); }, 3000);  // Auto advance every 3 seconds
+</script>
 </body>
 </html>
