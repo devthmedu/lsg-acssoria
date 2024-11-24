@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    './src/**/*.{html,js}',  // Ajuste conforme a estrutura do seu projeto
+    './src/**/*.{html,js}',  // Caminho para os arquivos que usarão Tailwind CSS
+    './public/**/*.{html,js}',  // Inclua a pasta "public" se você tiver arquivos estáticos no Vercel
   ],
 
   darkMode: 'class', // Modo escuro ativado via classe
@@ -8,106 +9,104 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#000000',  // Preto
-        secondary: '#ffffff',  // Branco
-        accent: '#131313',  // Escuro
-        'accent-dark': '#212121',  // Cinza mais claro
-        highlight: '#ff781e',  // Cor de destaque laranja
-
-        dark: '#070707FF',  // Cor de fundo escuro
-        'dark-background': '#0B0B0BFF',  // Fundo escuro mais suave
-        'dark-text': '#ffffff', // Texto claro para o modo escuro
-
-        'light-background': '#ffffff',  // Cor de fundo claro
-        'light-text': '#000000',  // Texto escuro para modo claro
+        primary: '#000000',
+        secondary: '#ffffff',
+        accent: '#131313',
+        'accent-dark': '#212121',
+        highlight: '#ff781e',
+        dark: '#070707FF',
+        'dark-background': '#0B0B0BFF',
+        'dark-text': '#ffffff',
+        'light-background': '#ffffff',
+        'light-text': '#000000',
       },
 
       typography: {
         DEFAULT: {
           css: {
-            color: '#131415FF', // Cor do texto padrão
-            'font-family': 'Roboto, sans-serif', // Fonte personalizada
-            'line-height': '1.75', // Espaçamento entre linhas padrão
-            'font-size': '1rem', // Tamanho da fonte padrão
+            color: '#131415FF',
+            'font-family': 'Roboto, sans-serif',
+            'line-height': '1.75',
+            'font-size': '1rem',
 
-            // Estilos para links
+            // Links
             'a': {
-              color: '#ff781e', // Cor do link padrão
-              textDecoration: 'none', // Remover underline por padrão
+              color: '#ff781e',
+              textDecoration: 'none',
               '&:hover': {
-                color: '#e64a19', // Cor do link ao passar o mouse
-                textDecoration: 'underline', // Adicionar underline no hover
+                color: '#e64a19',
+                textDecoration: 'underline',
               },
             },
 
-            // Estilos para parágrafos
+            // Parágrafos
             'p': {
-              marginBottom: '1.5rem', // Espaço entre parágrafos
-              color: '#333', // Cor dos parágrafos
+              marginBottom: '1.5rem',
+              color: '#333',
             },
 
-            // Estilos para títulos
+            // Títulos
             'h1': {
-              color: '#070707FF', // Cor do título h1
-              fontSize: '2.25rem', // Tamanho da fonte h1
-              fontWeight: '700', // Peso da fonte h1 (negrito)
-              lineHeight: '1.2', // Espaçamento entre linhas para h1
-              marginBottom: '0.75rem', // Margem inferior para h1
+              color: '#070707FF',
+              fontSize: '2.25rem',
+              fontWeight: '700',
+              lineHeight: '1.2',
+              marginBottom: '0.75rem',
             },
             'h2': {
-              color: '#1B1B1BFF', // Cor do título h2
-              fontSize: '1.875rem', // Tamanho da fonte h2
-              fontWeight: '600', // Peso da fonte h2
+              color: '#1B1B1BFF',
+              fontSize: '1.875rem',
+              fontWeight: '600',
               lineHeight: '1.3',
-              marginBottom: '0.5rem', // Margem inferior para h2
+              marginBottom: '0.5rem',
             },
             'h3': {
-              color: '#08090AFF', // Cor do título h3
-              fontSize: '1.5rem', // Tamanho da fonte h3
-              fontWeight: '500', // Peso da fonte h3
+              color: '#08090AFF',
+              fontSize: '1.5rem',
+              fontWeight: '500',
               lineHeight: '1.4',
-              marginBottom: '0.5rem', // Margem inferior para h3
+              marginBottom: '0.5rem',
             },
 
-            // Estilos para listas
+            // Listas
             'ul': {
               listStyleType: 'disc',
-              marginLeft: '1.5rem', // Margem à esquerda para listas
+              marginLeft: '1.5rem',
             },
             'ol': {
               listStyleType: 'decimal',
               marginLeft: '1.5rem',
             },
             'li': {
-              marginBottom: '0.75rem', // Espaçamento entre itens da lista
+              marginBottom: '0.75rem',
             },
 
-            // Estilo para citações
+            // Citações
             'blockquote': {
-              borderLeft: '4px solid #ff781e', // Bordas para citações
+              borderLeft: '4px solid #ff781e',
               paddingLeft: '1.25rem',
               color: '#131415FF',
               fontStyle: 'italic',
               marginBottom: '1.5rem',
             },
 
-            // Estilos para tabelas
+            // Tabelas
             'table': {
               width: '100%',
-              borderCollapse: 'collapse', // Colapsar as bordas da tabela
+              borderCollapse: 'collapse',
               marginBottom: '1.5rem',
             },
             'th, td': {
-              border: '1px solid #e2e8f0', // Cor da borda das células
+              border: '1px solid #e2e8f0',
               padding: '0.75rem',
               textAlign: 'left',
             },
             'th': {
-              backgroundColor: '#f7fafc', // Cor de fundo para cabeçalhos de tabela
+              backgroundColor: '#f7fafc',
               fontWeight: '600',
             },
             'td': {
-              backgroundColor: '#fff', // Cor de fundo para células de tabela
+              backgroundColor: '#fff',
             },
           },
         },

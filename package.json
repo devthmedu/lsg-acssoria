@@ -8,11 +8,11 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "build": "tailwindcss build src/assets/css/styles.css -o dist/styles.css",
-    "watch": "tailwindcss -i src/assets/css/styles.css -o dist/styles.css --watch",
-    "dev": "npm run watch",
-    "build:production": "NODE_ENV=production tailwindcss build src/assets/css/styles.css -o dist/styles.css",
-    "clean": "rimraf dist"
+    "scripts": {
+      "build": "tailwindcss build src/assets/css/styles.css -o dist/styles.css",
+      "watch": "tailwindcss -i src/assets/css/styles.css -o dist/styles.css --watch",
+      "dev": "npm run watch"
+    }
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.9",
