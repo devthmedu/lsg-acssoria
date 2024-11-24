@@ -2,17 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "src/script/aos.js",
       "use": "@vercel/node"
-    },
+    }
+  ],
+  "routes": [
     {
-      "src": "src/**/*.{js,ts}",
-      "use": "@vercel/static-build"
+      "src": "/(.*)",
+      "dest": "/src/script/aos.js"
     }
   ],
   "env": {
     "NODE_ENV": "production"
   },
   "buildCommand": "npm run build:production",
-  "outputDirectory": "dist" 
+  "outputDirectory": "dist"
 }
