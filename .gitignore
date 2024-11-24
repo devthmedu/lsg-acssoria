@@ -1,3 +1,40 @@
 node_modules
 # Ignore vídeos grandes e outros arquivos gerados
 public/video/*
+
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# Production
+dist/
+build/
+
+# .env files
+.env
+.env.*
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# MacOS specific files
+.DS_Store
+
+# Linux specific files
+*.swp
+
+# Windows specific files
+Thumbs.db
+
+# Tailwind CSS output (se aplicável)
+public/css/
