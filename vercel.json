@@ -2,14 +2,42 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
+      "src": "src/pages/**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "src/assets/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "src/styles/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "src/script/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "src/img/**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "src": "/",
+      "dest": "/src/pages/home.html"
+    },
+    {
+      "src": "/clientes",
+      "dest": "/src/pages/clientes.html"
+    },
+    {
+      "src": "/contato",
+      "dest": "/src/pages/contato.html"
+    },
+    {
+      "src": "/servicos",
+      "dest": "/src/pages/servicos.html"
     }
   ]
 }
