@@ -1,7 +1,9 @@
 module.exports = {
-  content: [
-    './src/**/*.{html,js}', // Ajuste conforme a estrutura do seu projeto
-  ],
+  
+    content: [
+  './src/**/*.{html,js}',
+  './public/**/*.{html,js}'
+]
   darkMode: 'class', // Modo escuro ativado via classe
 
   theme: {
